@@ -52,21 +52,20 @@
 
 .container .contact-area form input {
     height: 50px;
-    width: 100%;
     padding: 13px 29px 12px 29px;
-    margin-top: 15px;
     align-items: center;
     flex-shrink: 0;
     border-radius: 5px;
     border: 1px solid #FFF;
     background: #2E7CDF;
-
+    margin-top: 15px;
 }
 
-.container .contact-area form input::placeholder,
-textarea::placeholder,
-input,
-textarea{
+.container .contact-area form input {
+    display: flex;
+    flex-direction: column;
+}
+.container .contact-area form input::placeholder{
     color: #FFF;
 font-family: Lexend;
 font-size: 20px;
@@ -77,13 +76,14 @@ text-transform: capitalize;
 }
 .container .contact-area form textarea {
     resize: none;
-    width: 100%;
+    display: flex;
+    width: 641px;
     height: 150px;
-    padding: 19px 29px;
-    margin-top: 15px;
+    padding: 19px 529px 106px 29px;
     align-items: center;
     flex-shrink: 0;
     border-radius: 5px;
     border: 1px solid #FFF;
     background: #2E7CDF;
+    width: 100%;
 }
